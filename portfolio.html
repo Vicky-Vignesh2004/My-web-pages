@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="css/p_style.css" rel="stylesheet">
+    <script>
+        var arr = new Array("img/img1.jpeg", "img/img2.jpg");
+        var i = 1;
+        var ref;
+
+        function picLib() {
+            document.images[0].src = arr[i];
+            i++;
+            if (i > 1) {
+                i = 0;
+            }
+        }
+
+        function start() {
+            ref = setInterval("picLib()", 2000);
+        }
+
+        function stop() {
+            clearInterval(ref);
+
+        }
+    </script>
+
+</head>
+
+<body onload="start()" style="background-image:url(img/p_bg1.jpg);background-size:100% 100% ;">
+
+
+    <header>
+        <div
+            style="width: 40px; height: 40px; background-image: url(img/logo.jpeg);background-size:cover; position: absolute; float: right; top:25px; right: 20px; border-radius: 20px;">
+        </div>
+
+        <ul style="background-color: #0000008f; border-radius: 20px;">
+
+            <li style="float: left; list-style-type: none;"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a herf="#drop" class="active" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a style="background-color: aquamarine; border-radius: 30px;" href="portfolio.html">Portfolio</a>
+                    <a href="temp.html">Temperature Converter</a>
+                    <a href="bmi.html">BMI Calculater</a>
+                </div>
+            </li>
+
+
+        </ul>
+        </div>
+
+    </header>
+
+    <div class="container"
+        style="border: 3px solid #000200; color: #ab4e0d; position: relative ; background-image: url(img/p_bg.jpg); background-size:100% 100% ;">
+        <img style="border: 20px #000000; padding: 5px;" src="img/img1.jpeg" height="375px" width="250px" name="img1"
+            onmouseover="stop()" onmouseout="start()" alt="profile pic">
+        <h1 style="text-shadow:2px 2px 8px #20cb09; color: #3bba9c;"><u>Vignesh S</u></h1>
+        <h2 style="color: #3bba9c;"><b><u>About</u></b></h2>
+        <b>DOB:</b>&nbsp;31/01/2004 <br>
+        <b> Nationality:</b>&nbsp;Indian
+
+        <ul>
+            <h2><u style="color: #3bba9c;"><b>Contact</b></u></h2>
+            <li><b>Phone No:</b>&nbsp;8148971290<br></li>
+            <li><b>linkedin &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>:</b>&nbsp;<b><a
+                        href="https://www.linkedin.com/in/vignesh-s---?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Vignesh-s</a></b><br>
+            </li>
+        </ul>
+        <p style="position:static; left: 300px;">
+            &nbsp; &nbsp;&nbsp;&nbsp;Hey everyone! 👋 I'm a passionate student currently pursuing a B.Tech degree in CSE
+            Cybersecurity. 🌟 My goal is to make the digital world a safer place by combating cyber threats and
+            protecting sensitive information. 💻🔒 I'm constantly keeping up with the latest trends in cybersecurity,
+            from encryption to ethical hacking, and I love diving deep into these fascinating topics.
+            <br><br></p>
+    </div>
+    <div style="position: relative; ">
+        <h2><u> Skills</u></h2>
+        <ul>
+            <div style="float: left;width: 50%;">
+                <li>
+                    <h3><u>Programming Languages known</u></h3>
+                    <ul>
+                        <li>Python3</li>
+                        <li>C++(C++11,C++14,C++17)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><u>Cybersecurity</u></h3>
+                    <ul>
+                        <li>Networking</li>
+                        <li>Vulnerability Analysis</li>
+                        <li>Social engineering</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><u>Operating systems Used</u></h3>
+                    <ul>
+                        <li>Kali linux</li>
+                        <li>Ubuntu</li>
+                        <li>Windows(10 home,11 home)</li>
+                    </ul>
+                </li>
+            </div>
+            <br>
+            <li>
+                <h3><u>Database language</u></h3> - SQL,MYSQL
+            </li>
+            <li>
+                <h3><u>Markup language</u></h3> - HTML
+            </li>
+            <li>
+                <h3><u>Communicational languages known</u></h3>
+                <ul>
+                    <li>English</li>
+                    <li>Tamil</li>
+                    <li>Telugu</li>
+                    <li>Kannada</li>
+                    <li>Hindi</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div style="position: relative; float: left;">
+        <h2><u>Workshops And Courses </u></h2>
+        <div style="margin-left:50px ;">
+            <ul>
+                <li>
+                    <b><u>Cyber security and Ethical Hacking Workshop</u></b><br>
+                    Conducted by Ditto Security Innovation on 27th July,2023 at B.S.A.Crescent Institute of Science &
+                    Technology in vandalur, Chennai, Tamil Nadu.
+                </li>
+                <li>
+                    <b><u>Ethical Hacking:boot2root CTF Course</u></b><br>
+                    By Peter.A in Udemy
+                </li>
+                <li>
+                    <b><u>Hack Network PCs Course</u></b><br>
+                    By Peter.A in Udemy
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <div style="position: relative; height: fit-content;">
+        <div style="width: 50%; float: inline-start;">
+            <h2><u>Education</u></h2>
+            <div style="margin-left: 30px;">
+                <ul>
+                    <li>BTech CSE Cyber Security(UG) at B.S.A.Crescent Institute of Science & Technology in vandalur,
+                        Chennai, Tamil Nadu.
+                        <ul>
+                            <li>I Semester-8.15(GPA)</li>
+                            <li>II Semester-8.33(GPA)</li>
+                            <li>III Semester-9.22(GPA)</li>
+                            <li>IV Semester-8.82(GPA)</li>
+                        </ul>
+
+                    </li>
+                    <li>Higher secondary School (12th std) with 81% at Vailankanni Public School(CBSE) in Krishnagiri ,
+                        Tamil Nadu.</li>
+                    <li>High School (10th std) with 87% at Triveni Memorial High school(State Board) in
+                        Bangalure,Karanataka. </li>
+                </ul>
+            </div>
+        </div>
+        <div style="width:40%; float: inline-end;">
+            <h2><u>Experience</u></h2>
+            <div style="margin-left: 50px;">
+                <ul>
+                    <li><b><u>DLK Career Development</u></b><br>
+                        Web Development Internship <br>
+                        15 days from 26th August to 12th Septemper,2023
+                    </li>
+                    <li>
+                        <b><u>Barath Intern</b></u><br>
+                        As Web Developer Intern <br>
+                        From 10th October,2023 and Ongoing
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div style="width: 100%; float: left;">
+        <h2><u>Additional Skills</u></h2>
+        <div style="margin-left: 50px;">
+
+            <li>Collaboration talent(good collaboration with team). </li>
+            <li>Can communicate fluently in few languages(English,Tamil,Telugu,Kannada,Hindi).</li>
+            <li>Problem solving abilities(decide based on practical skill).</li>
+            <li>Time management.</li>
+            <li>Adaptability.</li>
+        </div>
+    </div>
+</body>
+
+</html>

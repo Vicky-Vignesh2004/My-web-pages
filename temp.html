@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="css/TC_style.css">
+
+
+</head>
+
+<body style="background-image: url('img/TC_BG.jpg');">
+  <header><a href="index.html" style="float: left; ">
+      <div
+        style="width: 40px; height: 40px; background-image: url(img/logo.jpeg);background-size:cover;border-radius: 15px;">
+      </div>
+    </a></header>
+
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a herf="#drop" class="active" class="dropbtn">Projects</a>
+      <div class="dropdown-content">
+        <a href="portfolio.html">Portfolio</a>
+        <a style="background-color: aquamarine; border-radius: 30px;" href="temp.html">Temperature Converter</a>
+        <a href="bmi.html">BMI Calculater</a>
+      </div>
+    <li><a href="contact.html">Contact</a></li>
+    </li>
+  </ul>
+
+
+  <div class="div1" style="text-align: center; font-size: larger;">
+    <h1><b><u>Temperature Converter</u></b></h1>
+    <p>Type a value in the Input field and press enter to convert the values:</p>
+
+    <form>
+      <label><b><u>Fahrenheit:</u></b><br></label>
+      <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"><br>
+      <br>
+      <label><b><u>Celsius:</u></b><br></label>
+      <input id="inputCelsius" type="number" placeholder="Celsius"><br>
+      <br>
+      <label><b><u>Kelvin:</u></b><br></label>
+      <input id="inputKelvin" type="number" placeholder="Kelvin"><br><br>
+      <button type="reset">Clear all</button>
+
+    </form>
+
+    <script type="text/javascript">
+      var inputf = document.getElementById('inputFahrenheit');
+      var inputc = document.getElementById('inputCelsius');
+      var inputk = document.getElementById('inputKelvin');
+
+      inputf.addEventListener('change', function () {
+        inputc.value = (inputf.value - 32) / 1.8;
+      });
+      inputf.addEventListener('change', function () {
+        inputk.value = ((inputf.value - 32) / 1.8) + 273.15;
+      });
+
+      inputc.addEventListener('change', function () {
+        inputf.value = (inputc.value * 1.8) + 32;
+      });
+      inputc.addEventListener('change', function () {
+        inputk.value = (273.15 + (1 * inputc.value));
+      });
+
+      inputk.addEventListener('change', function () {
+        inputf.value = ((inputk.value - 273.15) * 1.8) + 32;
+      });
+      inputk.addEventListener('change', function () {
+        inputc.value = (inputk.value - 273.15);
+      });
+    </script>
+
+</body>
+
+</html>

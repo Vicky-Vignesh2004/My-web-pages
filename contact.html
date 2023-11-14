@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            background-image: url(img/contact_bg1.jpg);
+            background-size: cover;
+            color: antiquewhite;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        ul {
+
+
+            list-style-type: none;
+            margin: 0;
+            padding-right: 40px;
+            overflow: hidden;
+            float: right;
+
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: burlywood;
+            border-radius: 30px;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6bf;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            color: aqua;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            border-radius: 30px;
+        }
+
+        label {
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        input {
+            height: 30px;
+            width: 300px;
+            border-radius: 20px;
+            font-size: large;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header><a href="#home" style="float: left; left: 10PX; top: 10px;"><img src="img/logo.jpeg" alt="logo" width="50px"
+                height="50px"></a></header>
+
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a herf="#drop" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="portfolio.html">Portfolio</a>
+                <a href="temp.html">Temperature Converter</a>
+                <a href="bmi.html">BMI Calculater</a>
+            </div>
+        <li><a class="active" href="#contact">Contact</a></li>
+        </li>
+    </ul>
+
+    <div style=" position: absolute; width : 50%; height: 75%; top: 14%; text-align: center; font-size: 30px;">
+        <h2><u><b>Address:</b></u></h2> Vandalur,Chennai-600028<br><br>
+        <h2><u><b>Email:</b></u></h2> vigneshssomu@gmail.com<br><br>
+        <h2><u><b>Phone:</b></u></h2> 8148971290<br><br>
+    </div>
+    <div style=" position: absolute; right: 0%; width : 50%; height: 75%; top: 25%; text-align: center;">
+        <h1 style="font-size: 40px;"><u>Contact Us</u></h1>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name"><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" id="Email"><br>
+            <label for="contact">Contact:</label><br>
+            <input type="number" id="contact"><br><br>
+            <input style="width: fit-content;" type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
